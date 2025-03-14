@@ -1,0 +1,13 @@
+# project_related
+.git
+.vscode
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# python
+__pycache__
+env
+.DS_Store
