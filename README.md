@@ -23,14 +23,14 @@ The **_Docker image_** of the app is available on [**Docker Hub**](https://hub.d
 To start a container of the app on port `8080`, run the following command:
 
 ```sh
-$ docker run -d -p 8080:8000 swarupranjanmondal/chess-engines
+$ docker run -d -p 8080:8000 swarupranjanmondal/chess-engines:flask
 ```
-
-Now, open the browser and navigate to [`http://localhost:8080/`](http://localhost:8080/).
 
 ### Execute
 
-On the browser, you would see a **Django REST framework** page. Now, select `Media type` as `application/json`. In the `Content` box paste the **JSON** given below and click `POST`.
+To verify that it is working, open **Postman** and select `POST` as the request type. Next, enter the following URL: `http://localhost:8080/`.
+Now, navigate to the `Body` tab, select `raw`, and choose `JSON` as the content type.
+In the content box, paste the JSON provided below and click `SEND`.
 
 ```json
 {
