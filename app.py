@@ -11,6 +11,12 @@ engines = {
     'komodo': chess.engine.SimpleEngine.popen_uci(
         'engines/komodo_12/komodo'
     ),
+    'critter': chess.engine.SimpleEngine.popen_uci(
+        'engines/critter_1.6a/critter'
+    ),
+    'minkochess': chess.engine.SimpleEngine.popen_uci(
+        'engines/minkochess_1.3/minkochess'
+    ),
 }
 
 @app.route('/', methods=['POST'])
